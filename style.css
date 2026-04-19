@@ -5,26 +5,34 @@ body {
   color: white;
 }
 
-/* Center login */
-.center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
+/* Auth box */
+.authBox {
+  width: 90%;
+  max-width: 350px;
+  margin: auto;
+  margin-top: 80px;
   text-align: center;
 }
 
-.logo {
-  font-size: 40px;
+h1 {
   color: #00a884;
 }
 
+.tabs button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background: #202c33;
+  color: white;
+  border-radius: 10px;
+}
+
 input {
+  width: 90%;
   padding: 12px;
-  margin: 10px;
+  margin: 8px;
   border-radius: 20px;
   border: none;
-  width: 70%;
 }
 
 button {
@@ -33,14 +41,12 @@ button {
   border-radius: 20px;
   background: #00a884;
   color: white;
-  font-size: 16px;
 }
 
-/* Chat Page */
+/* Chat */
 #chatPage {
   display: none;
   height: 100vh;
-  display: flex;
   flex-direction: column;
 }
 
@@ -52,17 +58,15 @@ button {
 
 #chatBox {
   flex: 1;
-  overflow-y: auto;
   padding: 10px;
+  overflow-y: auto;
 }
 
-/* Chat bubbles */
 .message {
   padding: 10px;
   margin: 5px;
   border-radius: 15px;
   max-width: 70%;
-  animation: fadeIn 0.3s ease;
 }
 
 .sent {
@@ -72,10 +76,8 @@ button {
 
 .received {
   background: #202c33;
-  margin-right: auto;
 }
 
-/* Input area */
 .inputArea {
   display: flex;
   padding: 10px;
@@ -84,9 +86,4 @@ button {
 
 .inputArea input {
   flex: 1;
-}
-
-@keyframes fadeIn {
-  from {opacity: 0; transform: translateY(10px);}
-  to {opacity: 1;}
 }
