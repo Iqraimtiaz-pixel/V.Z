@@ -23,7 +23,7 @@ export default function AuthScreen({ onLogin }) {
   const handleAuth = async () => {
     setError('');
     if (!email || !password) {
-      setError('Bhai email password to daal 😭');
+      setError('Bhai email password to daal');
       return;
     }
     try {
