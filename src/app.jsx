@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import AuthScreen from './screens/AuthScreen';
+import AuthScreen from './auth'
 import UsersListScreen from './screens/UsersListScreen';
 import ChatScreen from './screens/ChatScreen';
 
